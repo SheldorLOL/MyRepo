@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <servlet>
+  	<servlet-name>first</servlet-name>
+  	<servlet-class>net.antra.FirstServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>first</servlet-name>
+  	<url-pattern>/fs</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>employee</servlet-name>
+  	<servlet-class>net.antra.EmployeeServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>employee</servlet-name>
+  	<url-pattern>/es</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>department</servlet-name>
+  	<servlet-class>net.antra.DepartmentServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>department</servlet-name>
+  	<url-pattern>/ds</url-pattern>
+  </servlet-mapping>
+</web-app>
